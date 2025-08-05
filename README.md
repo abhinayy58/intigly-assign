@@ -1,22 +1,24 @@
-# 🧩 PokéDiscovery App
+# Intigly-assign App
 
-A responsive and interactive Pokémon discovery web application built with **React**, **React Router**, **TanStack Query**, and **Tailwind CSS**.
+A responsive and interactive Pokemon discovery web application built with **React**, **React Router**, **TanStack Query**, and **Tailwind CSS**.
 
-Users can browse Pokémon using infinite scrolling, add their favorites to a personal collection, and reorder them via drag-and-drop.
+Users can browse Pokemon using infinite scrolling, add their favorites to a personal collection, and reorder them via drag-and-drop.
 
 ---
 
-## 🚀 Live  Link  http://chipper-starburst-f1b72b.netlify.app/collection .
+## 🚀 Live Link http://chipper-starburst-f1b72b.netlify.app/collection .
 
 ## 🚀 Features
 
-- 🔍 **Pokémon Discovery**
+- 🔍 **Pokemon Discovery**
+
   - Infinite scrolling using Intersection Observer
-  - Each Pokémon displays image, name, types, and stats
+  - Each Pokemon displays image, name, types, and stats
   - Add to collection with a single click
 
 - 📁 **My Collection**
-  - View added Pokémon
+
+  - View added Pokemon
   - Drag and drop to reorder
   - Persistent using `localStorage`
 
@@ -37,24 +39,24 @@ src/
 │ ├── Header.jsx # Navigation bar with routing
 │ ├── Button.jsx # Reusable styled button
 | ├── Footer.jsx # Footer Component
-│ └── PokemonCard.jsx # Individual Pokémon display card
+│ └── PokemonCard.jsx # Individual Pokemon display card
 ├── pages/
 │ ├── Main.jsx # Discovery page (infinite scroll)
 │ └── Collection.jsx # My Collection (drag-and-drop)
 ├── App.jsx
 ├── index.js
 
-
-
 ---
 
 ## 🧱 Components
 
 ### 🔹 `Header.jsx`
+
 Fixed top navbar with navigation between **Discovery** and **Collection** using `react-router-dom`. Responsive and styled with Tailwind.
 
 ### 🔹 `Button.jsx`
-A customizable button component with Tailwind styles, used for the `+` action to add Pokémon.
+
+A customizable button component with Tailwind styles, used for the `+` action to add Pokemon.
 
 ---
 
@@ -68,3 +70,4 @@ npm run dev
 
 Open http://localhost:5173 to view it in the browser.
 
+```
