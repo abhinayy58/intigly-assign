@@ -1,12 +1,70 @@
-# React + Vite
+# 🧩 PokéDiscovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive Pokémon discovery web application built with **React**, **React Router**, **TanStack Query**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+Users can browse Pokémon using infinite scrolling, add their favorites to a personal collection, and reorder them via drag-and-drop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live  Link  http://chipper-starburst-f1b72b.netlify.app/collection .
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 🔍 **Pokémon Discovery**
+  - Infinite scrolling using Intersection Observer
+  - Each Pokémon displays image, name, types, and stats
+  - Add to collection with a single click
+
+- 📁 **My Collection**
+  - View added Pokémon
+  - Drag and drop to reorder
+  - Persistent using `localStorage`
+
+- ⚙️ **Tech Stack**
+  - React (Functional Components & Hooks)
+  - TanStack React Query (v5)
+  - Tailwind CSS
+  - React Router
+  - Intersection Observer API
+  - PokeAPI
+
+---
+
+## 📁 Folder Structure
+
+src/
+├── components/
+│ ├── Header.jsx # Navigation bar with routing
+│ ├── Button.jsx # Reusable styled button
+| ├── Footer.jsx # Footer Component
+│ └── PokemonCard.jsx # Individual Pokémon display card
+├── pages/
+│ ├── Main.jsx # Discovery page (infinite scroll)
+│ └── Collection.jsx # My Collection (drag-and-drop)
+├── App.jsx
+├── index.js
+
+
+
+---
+
+## 🧱 Components
+
+### 🔹 `Header.jsx`
+Fixed top navbar with navigation between **Discovery** and **Collection** using `react-router-dom`. Responsive and styled with Tailwind.
+
+### 🔹 `Button.jsx`
+A customizable button component with Tailwind styles, used for the `+` action to add Pokémon.
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/abhinayy58/intigly-assign.git
+cd intigly-assign
+npm install
+npm run dev
+
+Open http://localhost:5173 to view it in the browser.
+
